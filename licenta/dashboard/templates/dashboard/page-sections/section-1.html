@@ -1,0 +1,44 @@
+{% load static %}
+
+<section class="u-clearfix u-image u-section-1" id="sec-8e35" data-image-width="595" data-image-height="396">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-row">
+                    <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div
+                                class="u-align-left u-container-style u-expanded-width-xs u-group u-opacity u-opacity-25 u-radius-50 u-shape-round u-white u-group-1">
+                                <div class="u-container-layout u-container-layout-2">
+                                    <h1 class="u-text u-text-default u-title u-text-1">
+                                        {% if app_name %}
+                                            {{ app_name }}
+                                        {% else %}
+                                            Glucomate
+                                        {% endif %}
+                                    </h1>
+                                    <p class="u-large-text u-text u-text-variant u-text-2">
+                                        {% if app_motto %}
+                                            {{ app_motto }}
+                                        {% else %}
+                                            Healthier each day!
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                        {% url 'dashboard-register' as register_url %}
+                        {% url 'dashboard-homepage' as homepage_url %}
+
+                        {% if request.get_full_path == register_url %}
+                            {% include "users/register.html" %}
+                        {% elif request.get_full_path == homepage_url %}
+                            {% include "users/login.html" %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

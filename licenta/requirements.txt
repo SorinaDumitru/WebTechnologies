@@ -1,0 +1,7 @@
+Django
+django-crispy-forms
+djangorestframework
+pylint
+pylint-django
+autopep8
+coverage

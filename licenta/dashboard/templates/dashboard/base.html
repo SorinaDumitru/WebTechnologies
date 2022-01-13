@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+{% include "./header.html" %}
+
+<body data-home-page-title="Home page" class="u-body">
+  {% include "./menu.html" %}
+
+  {% if messages %}
+  {% for message in messages %}
+    <div>
+      {{ message }}
+    </div>
+  {% endfor %}
+  {% endif %}
+  {% block base-content %}{% endblock %}
+
+  {% include "./footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+{% extends "dashboard/base-content.html" %}
+{% load static %}
+
+{% block other-sections %}
+<section class="u-clearfix u-section-contact-2" id="carousel_eb6b">
+  <img class="u-expanded-width u-image u-image-contact-1"
+    src="{% static 'dashboard/images/contact.png' %}"
+    data-image-width="1280" data-image-height="800">
+  <div class="u-clearfix u-grey-contact-10 u-gutter-0 u-layout-wrap u-layout-wrap-contact-1">
+    <div class="u-gutter-0 u-layout">
+      <div class="u-layout-row">
+        <div class="u-size-contact-27">
+          <div class="u-layout-col">
+            <div
+              class="u-align-left u-container-style u-custom-color-9 u-layout-cell u-left-cell u-size-30 u-layout-cell-contact-1">
+              <div class="u-container-layout u-container-layout-contact-1">
+                <h2 class="u-text u-text-grey-70 u-text-contact-1">Contact us</h2>
+                <p class="u-text u-text-grey-50 u-text-contact-2">Mon – Fri: 9:00 am – 8:00 pm,<br>Sat – Sun: 9:00 am – 10
+                  pm<br>
+                  <span class="u-text-palette-contact-2-base">+40770660721<br>sorina.dumitru01@e-uvt.ro
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-size-33">
+          <div class="u-layout-row">
+            <div
+              class="u-align-left u-container-style u-custom-color-9 u-layout-cell u-right-cell u-size-60 u-layout-cell-contact-">
+              <div class="u-container-layout u-container-layout-contact-">
+                <h5 class="u-text u-text-default u-text-grey-40 u-text-5">LEAVE US A MESSAGE</h5>
+                <div class="u-expanded-width u-form u-form-contact-1">
+                  <form action="#" method="POST" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form"
+                    style="padding: 0px;" source="email" name="form">
+                    <input type="hidden" id="siteId" name="siteId" value="993048">
+                    <input type="hidden" id="pageId" name="pageId" value="1019132">
+                    <div class="u-form-group u-form-name">
+                      <label for="name-3b9a" class="u-form-control-hidden u-label">Name</label>
+                      <input type="text" placeholder="Enter your Name" id="name-3b9a" name="name"
+                        class="u-border-contact-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-contact-1"
+                        required="">
+                    </div>
+                    <div class="u-form-email u-form-group">
+                      <label for="email-3b9a" class="u-form-control-hidden u-label">Email</label>
+                      <input type="email" placeholder="Enter a valid email address" id="email-3b9a" name="email"
+                        class="u-border-contact-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-contact-2"
+                        required="">
+                    </div>
+                    <div class="u-form-group u-form-message">
+                      <label for="message-3b9a" class="u-form-control-hidden u-label">Message</label>
+                      <textarea placeholder="Enter your message" rows="4" cols="50" id="message-3b9a" name="message"
+                        class="u-border-contact-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-contact-"
+                        required=""></textarea>
+                    </div>
+                    <div class="u-align-left u-form-group u-form-submit">
+                      <a href="#"
+                        class="u-border-contact-2 u-border-black u-btn u-btn-submit u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-contact-1">Submit</a>
+                      <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors
+                      then try again. </div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock other-sections %}
